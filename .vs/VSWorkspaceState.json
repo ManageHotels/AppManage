@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\HOTELS",
-    "\\HOTELS\\AppManage"
+    "\\HOTELS\\AppManage",
+    "\\HOTELS\\AppManage\\BusinessLayer"
   ],
-  "SelectedNode": "\\HOTELS\\AppManage\\AppManage.sln",
+  "SelectedNode": "\\HOTELS\\AppManage\\BusinessLayer\\CongTy.cs",
   "PreviewInSolutionExplorer": false
 }
