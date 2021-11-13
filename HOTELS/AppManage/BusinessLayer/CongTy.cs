@@ -57,12 +57,12 @@ namespace BusinessLayer
             db.tb_CONGTY.Remove(_CT);
             try
             {
-                db.SaveChanges();
+                db.SaveChanges(); // save all
             }
             catch (Exception ex)
             {
                 throw new Exception("An error encountered during data processing, please try again !" + ex.Message);
-              //  lam choi
+             
             }
         }
     }
