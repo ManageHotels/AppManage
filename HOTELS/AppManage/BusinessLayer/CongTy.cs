@@ -62,7 +62,7 @@ namespace BusinessLayer
             catch (Exception ex)
             {
                 throw new Exception("An error encountered during data processing, please try again !" + ex.Message);
-              
+              //  lam choi
             }
         }
     }
