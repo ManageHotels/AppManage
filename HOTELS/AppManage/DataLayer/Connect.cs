@@ -57,6 +57,7 @@ namespace DataLayer
 			BinaryFormatter bf = new BinaryFormatter(); // tạo đối tượng chuyển đổi 
 			bf.Serialize(fs, this); // lưu kết quả chuyển đổi file
 			fs.Close();
+                
 		}
 	}
 }
