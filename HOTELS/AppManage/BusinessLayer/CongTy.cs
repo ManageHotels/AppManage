@@ -9,7 +9,7 @@ namespace BusinessLayer
     public class CongTy
     {
         Entities db;
-        public CongTy()
+        public CongTy() // Ham constructor
         {
             db = Entities.CreateEntities();
         }
