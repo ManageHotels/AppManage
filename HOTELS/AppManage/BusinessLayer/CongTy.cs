@@ -30,7 +30,7 @@ namespace BusinessLayer
             }
             catch (Exception ex)
             {
-                throw new Exception("An error encountered during data processing, please try again !" + ex.Message);
+                throw new Exception("An error encountered during data processing, please try again now!" + ex.Message);
             }
         }
         public void Update(tb_CONGTY UpdateCT)
