@@ -3,8 +3,9 @@
     "",
     "\\HOTELS",
     "\\HOTELS\\AppManage",
-    "\\HOTELS\\AppManage\\BusinessLayer"
+    "\\HOTELS\\AppManage\\BusinessLayer",
+    "\\HOTELS\\AppManage\\ManageRoom"
   ],
-  "SelectedNode": "\\HOTELS\\AppManage\\AppManage.sln",
+  "SelectedNode": "\\HOTELS\\AppManage\\ManageRoom\\FormDatabaseConnect.cs",
   "PreviewInSolutionExplorer": false
 }

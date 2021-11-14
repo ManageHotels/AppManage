@@ -26,7 +26,7 @@ namespace ManageRoom
         private void btnCheckData_Click(object sender, EventArgs e)//check database
         {
             SqlConnection con = GetCon(txtServer.Text, txtUsername.Text, txtPassword.Text, cbbDatabase.Text);
-            try 
+            try
             {
                 con.Open();
                 MessageBox.Show("Successful Connection");
