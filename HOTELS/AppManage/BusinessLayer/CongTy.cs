@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataLayer;//Liet ket quan he
+using DataLayer;//Liet ket quan he voi DataLayer
 namespace BusinessLayer
 {
     public class CongTy
