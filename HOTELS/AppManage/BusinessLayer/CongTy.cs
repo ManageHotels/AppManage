@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataLayer;
+using DataLayer;//Liet ket quan he
 namespace BusinessLayer
 {
     public class CongTy
     {
         Entities db;
-        public CongTy() // Ham constructor CongTy
+        public CongTy() // Ham dung constructor CongTy
         {
             db = Entities.CreateEntities();
         }
