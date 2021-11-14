@@ -52,7 +52,7 @@ namespace DataLayer
 			{
 				File.Delete("connectdb.dba");
 			}
-			//FileStream là cơ chế hỗ trợ đọc ghi file (FileStream is a file write support mode)- Readmore StreamAdapter
+			//FileStream là cơ chế hỗ trợ đọc ghi file (FileStream is a file write support mode)- Readmore StreamAdapter     
 			FileStream fs = File.Open("connectdb.dba", FileMode.OpenOrCreate, FileAccess.Write); //method OpenOrCreate nói với hệ điều hảnh nên mở một tập tin nếu nó tồn tại; nếu không, một tập tin mới sẽ được tạo ra.
 																								 // FileStream(String, FileMode, FileAccess) đây là định dạng khởi tạo FileStream
 			BinaryFormatter bf = new BinaryFormatter(); // tạo đối tượng chuyển đổi 
