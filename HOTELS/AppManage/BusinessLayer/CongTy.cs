@@ -51,7 +51,7 @@ namespace BusinessLayer
                 throw new Exception("An error encountered during data processing, please try again !" + ex.Message);
             }
         }
-        public void Delete(string MaCongTy)
+        public void Delete(string MaCongTy)//Ham xoa
         {
             tb_CONGTY _CT = db.tb_CONGTY.FirstOrDefault(x => x.MACTY == MaCongTy);
             db.tb_CONGTY.Remove(_CT);
