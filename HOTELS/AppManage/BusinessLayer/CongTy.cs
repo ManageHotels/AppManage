@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataLayer;//Liet ket quan he voi DataLayer
+using DataLayer;
 namespace BusinessLayer
 {
     public class CongTy
@@ -33,7 +33,7 @@ namespace BusinessLayer
                 throw new Exception("An error encountered during data processing, please try again now!" + ex.Message);
             }
         }
-        public void Update(tb_CONGTY UpdateCT)
+        public void Update(tb_CONGTY UpdateCT)//Ham cap nhat cong ty
         {
             tb_CONGTY _CT = db.tb_CONGTY.FirstOrDefault(x => x.MACTY == UpdateCT.MACTY);
             _CT.TENCTY = UpdateCT.TENCTY;
