@@ -23,7 +23,7 @@ namespace ManageRoom
         {
             return new SqlConnection("Data Source=" + server + "; Initial Catalog=" + database + "; User ID=" + username + "; Password=" + pass + ";"); // return chuỗi kết nối
         }
-        private void btnCheckData_Click(object sender, EventArgs e)
+        private void btnCheckData_Click(object sender, EventArgs e)//check database
         {
             SqlConnection con = GetCon(txtServer.Text, txtUsername.Text, txtPassword.Text, cbbDatabase.Text);
             try
