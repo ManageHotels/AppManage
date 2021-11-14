@@ -34,7 +34,7 @@ namespace ManageRoom
             catch (Exception)
             {
                 MessageBox.Show("Failed Connection");
-            }
+            }    
         }
 
         private void cbbDatabase_MouseClick(object sender, MouseEventArgs e)
