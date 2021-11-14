@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KHACHSANStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="tb_CONGTY">
+      <EntityTypeMapping TypeName="KHACHSAN.tb_CONGTY">
+        <MappingFragment StoreEntitySet="tb_CONGTY">
+          <ScalarProperty Name="IDCTY" ColumnName="IDCTY" />
+          <ScalarProperty Name="TENCTY" ColumnName="TENCTY" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_DONVI">
+      <EntityTypeMapping TypeName="KHACHSAN.tb_DONVI">
+        <MappingFragment StoreEntitySet="tb_DONVI">
+          <ScalarProperty Name="IDDONVI" ColumnName="IDDONVI" />
+          <ScalarProperty Name="TENDONVI" ColumnName="TENDONVI" />
+          <ScalarProperty Name="MACTY" ColumnName="MACTY" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

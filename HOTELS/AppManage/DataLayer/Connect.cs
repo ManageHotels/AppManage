@@ -12,7 +12,7 @@ namespace DataLayer
 	public class Connect
 	{
 		public string servername;
-		public string Servername
+		public string Servername //thuoc tinh 
 		{
 			get { return servername; }
 			set { servername = value; }
@@ -37,6 +37,7 @@ namespace DataLayer
 		}
 
 		//Construction
+
 		public Connect(string _servername, string _username, string _passwd, string _database)
 		{
 			this.servername = _servername;
@@ -44,7 +45,7 @@ namespace DataLayer
 			this.passwd = _passwd;
 			this.database = _database;
 		}
-		//Method ConnectData using for Form DatabaseConnect's btnSaveData to write file    
+		//Method ConnectData using for Form DatabaseConnect's btnSaveData to write file
 		public void ConnectData(string fileName)
 		{
 			if (File.Exists("connectdb.dba"))
@@ -57,7 +58,6 @@ namespace DataLayer
 			BinaryFormatter bf = new BinaryFormatter(); // tạo đối tượng chuyển đổi 
 			bf.Serialize(fs, this); // lưu kết quả chuyển đổi file
 			fs.Close();
-                
 		}
 	}
 }

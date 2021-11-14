@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KHACHSAN.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tb_CONGTY">
+          <Key>
+            <PropertyRef Name="IDCTY" />
+          </Key>
+          <Property Name="IDCTY" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TENCTY" Type="nvarchar" MaxLength="50" />
+          <Property Name="PHONE" Type="int" />
+          <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="DIACHI" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tb_DONVI">
+          <Key>
+            <PropertyRef Name="IDDONVI" />
+          </Key>
+          <Property Name="IDDONVI" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TENDONVI" Type="nvarchar" MaxLength="50" />
+          <Property Name="MACTY" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="PHONE" Type="int" />
+          <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="DIACHI" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="KHACHSANStoreContainer">
+          <EntitySet Name="tb_CONGTY" EntityType="Self.tb_CONGTY" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_DONVI" EntityType="Self.tb_DONVI" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KHACHSAN" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tb_CONGTY">
+          <Key>
+            <PropertyRef Name="IDCTY" />
+          </Key>
+          <Property Name="IDCTY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TENCTY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PHONE" Type="Int32" />
+          <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DIACHI" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tb_DONVI">
+          <Key>
+            <PropertyRef Name="IDDONVI" />
+          </Key>
+          <Property Name="IDDONVI" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TENDONVI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MACTY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PHONE" Type="Int32" />
+          <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DIACHI" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tb_CONGTY" EntityType="Self.tb_CONGTY" />
+          <EntitySet Name="tb_DONVI" EntityType="Self.tb_DONVI" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KHACHSANStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="tb_CONGTY">
+            <EntityTypeMapping TypeName="KHACHSAN.tb_CONGTY">
+              <MappingFragment StoreEntitySet="tb_CONGTY">
+                <ScalarProperty Name="IDCTY" ColumnName="IDCTY" />
+                <ScalarProperty Name="TENCTY" ColumnName="TENCTY" />
+                <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_DONVI">
+            <EntityTypeMapping TypeName="KHACHSAN.tb_DONVI">
+              <MappingFragment StoreEntitySet="tb_DONVI">
+                <ScalarProperty Name="IDDONVI" ColumnName="IDDONVI" />
+                <ScalarProperty Name="TENDONVI" ColumnName="TENDONVI" />
+                <ScalarProperty Name="MACTY" ColumnName="MACTY" />
+                <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KHACHSAN.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tb_CONGTY">
+    <Key>
+      <PropertyRef Name="IDCTY" />
+    </Key>
+    <Property Name="IDCTY" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENCTY" Type="nvarchar" MaxLength="50" />
+    <Property Name="PHONE" Type="int" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="DIACHI" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tb_DONVI">
+    <Key>
+      <PropertyRef Name="IDDONVI" />
+    </Key>
+    <Property Name="IDDONVI" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENDONVI" Type="nvarchar" MaxLength="50" />
+    <Property Name="MACTY" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PHONE" Type="int" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="DIACHI" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityContainer Name="KHACHSANStoreContainer">
+    <EntitySet Name="tb_CONGTY" EntityType="Self.tb_CONGTY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_DONVI" EntityType="Self.tb_DONVI" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

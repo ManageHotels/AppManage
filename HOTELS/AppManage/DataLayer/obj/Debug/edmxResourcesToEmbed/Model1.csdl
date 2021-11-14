@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KHACHSAN" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tb_CONGTY">
+    <Key>
+      <PropertyRef Name="IDCTY" />
+    </Key>
+    <Property Name="IDCTY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TENCTY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE" Type="Int32" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DIACHI" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tb_DONVI">
+    <Key>
+      <PropertyRef Name="IDDONVI" />
+    </Key>
+    <Property Name="IDDONVI" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TENDONVI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MACTY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PHONE" Type="Int32" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DIACHI" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_CONGTY" EntityType="Self.tb_CONGTY" />
+    <EntitySet Name="tb_DONVI" EntityType="Self.tb_DONVI" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,12 @@
+D:\AppManage\HOTELS\AppManage\DataLayer\bin\Debug\DataLayer.dll.config
+D:\AppManage\HOTELS\AppManage\DataLayer\bin\Debug\DataLayer.dll
+D:\AppManage\HOTELS\AppManage\DataLayer\bin\Debug\DataLayer.pdb
+D:\AppManage\HOTELS\AppManage\DataLayer\bin\Debug\EntityFramework.dll
+D:\AppManage\HOTELS\AppManage\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\AppManage\HOTELS\AppManage\DataLayer\bin\Debug\EntityFramework.xml
+D:\AppManage\HOTELS\AppManage\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\AppManage\HOTELS\AppManage\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
+D:\AppManage\HOTELS\AppManage\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+D:\AppManage\HOTELS\AppManage\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
+D:\AppManage\HOTELS\AppManage\DataLayer\obj\Debug\DataLayer.dll
+D:\AppManage\HOTELS\AppManage\DataLayer\obj\Debug\DataLayer.pdb
