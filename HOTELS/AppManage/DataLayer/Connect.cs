@@ -56,7 +56,7 @@ namespace DataLayer
 			FileStream fs = File.Open("connectdb.dba", FileMode.OpenOrCreate, FileAccess.Write); //method OpenOrCreate nói với hệ điều hảnh nên mở một tập tin nếu nó tồn tại; nếu không, một tập tin mới sẽ được tạo ra.
 																								 // FileStream(String, FileMode, FileAccess) đây là định dạng khởi tạo FileStream
 			BinaryFormatter bf = new BinaryFormatter(); // tạo đối tượng chuyển đổi 
-			bf.Serialize(fs, this); // lưu kết quả chuyển đổi file
+			bf.Serialize(fs, this); // lưu kết quả chuyển đổi file       
 			fs.Close();
 		}
 	}
