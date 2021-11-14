@@ -45,7 +45,7 @@ namespace DataLayer
 			this.passwd = _passwd;
 			this.database = _database;
 		}
-		//Method ConnectData using for Form DatabaseConnect's btnSaveData to write file
+		//Method ConnectData using for Form DatabaseConnect's btnSaveData to write file      
 		public void ConnectData(string fileName)
 		{
 			if (File.Exists("connectdb.dba"))
